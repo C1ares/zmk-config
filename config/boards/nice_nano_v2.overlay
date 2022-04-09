@@ -10,6 +10,7 @@
 	chosen {
 		zmk,underglow = &led_strip;
 	};
+}
 
 &spi1 {
 	compatible = "nordic,nrf-spim";
