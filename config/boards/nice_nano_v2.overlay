@@ -6,6 +6,11 @@
 
 #include <dt-bindings/led/led.h>
 
+/ {
+	chosen {
+		zmk,underglow = &led_strip;
+	};
+
 &spi1 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
@@ -27,11 +32,5 @@
 		spi-one-frame = <0x70>;
 		spi-zero-frame = <0x40>;
 		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
-	};
-};
-
-/ {
-	chosen {
-		zmk,underglow = &led_strip;
 	};
 };
