@@ -33,6 +33,5 @@
 / {
 	aliases {
 		led-strip = &led_strip;
-		led0 = &led;
 	};
 };
